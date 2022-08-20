@@ -7,12 +7,18 @@ export default class App {
 
   constructor() {
     window.addEventListener("resize", this.onWindowResize, false);
+    console.log("mousemove");
+    window.addEventListener("mousemove", this.onMouseMove, false);
   }
 
   //-----------------------------------------------------------------------------
 
   onWindowResize(evt) {
     console.log("onWindowResize", evt);
+  }
+
+  onMouseMove(evt) {
+    console.log(evt);
   }
 
   //-----------------------------------------------------------------------------
