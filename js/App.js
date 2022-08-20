@@ -54,10 +54,18 @@ export default class App {
     // line.position.set(40, 40);
     line.lineStyle(6, 0xffffff)
           // .moveTo(0, 0)
-          .moveTo(40, 60)
+          .moveTo(90, 120)
           .lineTo(520, 230)
+          .lineTo(620, 210)
           // .moveTo(w/20, h/10)
           // .lineTo(w/3, h/2);
+
+    let cat = PIXI.Sprite.from('/pixi/cat.png');
+    cat.x = 60;
+    cat.y = 60;
+    cat.anchor.set(0.5);
+    app.stage.addChild(cat);
+    console.log(cat);
 
   }
 
