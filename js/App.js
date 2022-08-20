@@ -60,7 +60,7 @@ export default class App {
           // .moveTo(w/20, h/10)
           // .lineTo(w/3, h/2);
 
-    let cat = PIXI.Sprite.from('/pixi/cat.png');
+    let cat = PIXI.Sprite.from('pixi/cat.png');
     cat.x = 60;
     cat.y = 60;
     cat.anchor.set(0.5);
