@@ -44,7 +44,7 @@
             </div>
             <div id="navbar-list-menu-modal">
               <span class="navbar-list-menu-item">
-                <a href="/app_embed.html">App</a>
+                <a href="/index.html">App</a>
               </span>
             </div>
           </div>
@@ -65,9 +65,8 @@
 
       async function main() {
 
+        console.log("main");
         let app = new App();
-        console.log(app);
-        
         await app.initialize({
           debugMode: true,
         });
@@ -77,7 +76,12 @@
 
       }
 
-      main();
+      window.addEventListener(
+        "load",
+        () => main(),
+        false
+      );
+
     </script>
   </body>
 </html>
