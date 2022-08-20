@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta property="iframely:title" content="starter-pixijs">
+    <meta property="iframely:image" content="starter-pixijs-logo-512x512.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>starter-pixijs</title>
+  </head>
+  
+  <body>
+    <header>
+      <div id="navbar-container">
+        <div>
+          <a href="/" style="text-decoration: none;">
+            starter-pixijs
+          </a>
+        </div>
+
+        <div></div>
+
+        <div>
+          <div id="navbar-top-menu">
+            <span class="navbar-top-menu-item">
+              <a href="/app_embed.html">App</div>
+            </span>
+          </div>
+
+          <div id="navbar-list-menu-container">
+            <div id="hamburger-menu-icon">
+              <svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="10" rx="4" ry="4" width="80" height="20" style="fill: #929292" />
+                <rect x="20" y="40" rx="4" ry="4" width="80" height="20" style="fill: #929292" />
+                <rect x="20" y="70" rx="4" ry="4" width="80" height="20" style="fill: #929292" />
+              </svg>
+            </div>
+            <div id="navbar-list-menu-modal">
+              <span class="navbar-list-menu-item">
+                <a href="/app_embed.html">App</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <p style="padding: 0 0 0 1rem;">
+        starter-pixijs
+      </p>
+    </div>
+
+    <div id="pixiContainer" style="flex: 1; width: 100%;"></div>
+
+    <script type="module">
+      import App from "./js/App.js";
+
+      async function main() {
+
+        let app = new App();
+        console.log(app);
+        
+        await app.initialize({
+          debugMode: true,
+        });
+
+        // ------------------------------------------------
+        
+
+      }
+
+      main();
+    </script>
+  </body>
+</html>
