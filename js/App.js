@@ -7,8 +7,8 @@ export default class App {
 
   constructor() {
     window.addEventListener("resize", this.onWindowResize, false);
-    console.log("mousemove");
-    window.addEventListener("mousemove", this.onMouseMove, false);
+    // console.log("mousemove");
+    // window.addEventListener("mousemove", this.onMouseMove, false);
   }
 
   //-----------------------------------------------------------------------------
